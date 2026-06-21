@@ -1,0 +1,125 @@
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;scroll-behavior:smooth}
+body{
+  font-family:"Noto Serif SC","Source Han Serif SC",STSong,"宋体",Georgia,serif;
+  color:#2c2c2c;background:#f5f0eb;line-height:1.9
+}
+.site-wrapper{max-width:1000px;margin:0 auto;padding:0 20px}
+
+/* Header */
+.site-header{
+  background:linear-gradient(135deg,#1a1a2e,#0f3460);color:#e8e8e8;
+  padding:0 20px;position:sticky;top:0;z-index:100
+}
+.header-inner{max-width:1000px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;height:56px}
+.site-title{color:#e8e8e8;text-decoration:none;font-size:1.1rem;font-weight:700;letter-spacing:.15em}
+.site-title span{color:#64b5f6}
+.site-nav a{color:#a0aec0;text-decoration:none;font-size:.85rem;margin-left:20px;transition:.2s}
+.site-nav a:hover{color:#e8e8e8}
+
+/* Hero */
+.hero{text-align:center;padding:60px 20px;background:linear-gradient(180deg,#f5f0eb 0%,#ede5db 100%)}
+.hero h1{font-size:2.2rem;color:#1a1a2e;letter-spacing:.15em;margin-bottom:8px}
+.hero .tagline{color:#666;font-size:1rem;max-width:600px;margin:0 auto}
+.hero .badge{display:inline-block;margin-top:16px;padding:4px 16px;background:#0f3460;color:#fff;border-radius:20px;font-size:.8rem}
+
+/* Section */
+.section-title{font-size:1.15rem;color:#1a1a2e;margin:40px 0 20px;padding-bottom:8px;border-bottom:2px solid #1a1a2e;display:flex;align-items:center;gap:10px}
+.section-title .count{font-size:.8rem;color:#999;font-weight:400}
+
+/* Grid */
+.novel-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px;margin-bottom:40px}
+
+/* Card */
+.novel-card{
+  border-radius:10px;padding:28px;color:#e8e8e8;text-decoration:none;
+  position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s;
+  box-shadow:0 4px 12px rgba(0,0,0,.15);min-height:150px;display:flex;flex-direction:column;justify-content:space-between
+}
+.novel-card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.novel-card .card-badge{
+  display:inline-block;padding:2px 10px;background:rgba(255,255,255,.15);
+  border-radius:12px;font-size:.75rem;margin-bottom:10px;width:fit-content
+}
+.novel-card .card-title{font-size:1.4rem;font-weight:700;letter-spacing:.1em;margin-bottom:6px}
+.novel-card .card-desc{font-size:.82rem;color:rgba(255,255,255,.65);line-height:1.5;flex:1}
+.novel-card .card-footer{margin-top:12px;font-size:.75rem;color:rgba(255,255,255,.4)}
+.novel-card.series{border:2px solid rgba(255,255,255,.2)}
+
+/* Novel Page */
+.novel-header{padding:30px 0 0}
+.back-link{color:#0f3460;text-decoration:none;font-size:.8rem;padding:6px 14px;border:1px solid #0f3460;border-radius:4px;display:inline-block;margin-bottom:16px;transition:.2s}
+.back-link:hover{background:#0f3460;color:#fff}
+.cover-large{
+  border-radius:12px;padding:50px 40px;text-align:center;color:#e8e8e8;
+  box-shadow:0 8px 32px rgba(0,0,0,.3);margin-bottom:30px
+}
+.cover-large h1{font-size:2.6rem;letter-spacing:.3em;margin-bottom:10px}
+.cover-large .sub{color:rgba(255,255,255,.65);font-size:.9rem;margin-bottom:16px}
+.cover-large .tags{display:flex;justify-content:center;gap:8px;flex-wrap:wrap}
+.cover-large .tags span{padding:4px 14px;background:rgba(255,255,255,.1);border-radius:20px;font-size:.78rem}
+
+/* Synopsis & Philosophy */
+.section-block{padding:24px 0 16px}
+.section-block h2{font-size:1.1rem;color:#1a1a2e;margin-bottom:12px;padding-bottom:6px;border-bottom:1px solid #e2d8d0}
+.section-block p{font-size:.95rem;color:#444;line-height:1.8;text-indent:2em}
+
+/* Chapter List */
+.chapter-list{list-style:none;padding:10px 0 30px}
+.chapter-list li{border-bottom:1px solid #e2d8d0}
+.chapter-list a{
+  display:flex;padding:13px 16px;text-decoration:none;color:#2c2c2c;transition:.2s;gap:12px
+}
+.chapter-list a:hover{background:rgba(15,52,96,.05);padding-left:24px;color:#0f3460}
+.ch-num{color:#0f3460;font-weight:600;min-width:5em;font-size:.9rem}
+
+/* Series Chapter List */
+.series-chapter-list{list-style:none;padding:10px 0 30px}
+.series-chapter-list .volume-header{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:14px 16px 8px;margin-top:16px;border-bottom:2px solid #1a1a2e;
+  font-weight:700;color:#1a1a2e;font-size:1rem;background:rgba(26,26,46,.03);border-radius:6px 6px 0 0
+}
+.series-chapter-list .volume-header .vol-count{
+  font-size:.8rem;color:#999;font-weight:400
+}
+.series-chapter-list .chapter-item{border-bottom:1px solid #e2d8d0;padding-left:20px}
+.series-chapter-list .chapter-item a{
+  display:flex;padding:11px 16px;text-decoration:none;color:#2c2c2c;transition:.2s;gap:12px
+}
+.series-chapter-list .chapter-item a:hover{
+  background:rgba(15,52,96,.05);padding-left:24px;color:#0f3460
+}
+
+/* Reader */
+.reader-top{
+  padding:16px 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px
+}
+.reader-top .back{color:#0f3460;text-decoration:none;font-size:.85rem}
+.reader-title{font-size:1.2rem;font-weight:600;color:#1a1a2e;text-align:center}
+.chapter-body{padding:20px 0;font-size:1.05rem;text-align:justify;max-width:750px;margin:0 auto}
+.chapter-body p{text-indent:2em;margin-bottom:1.1em}
+.chapter-body hr{border:none;border-top:1px solid #d4cbc3;margin:2em auto;width:30%}
+.chapter-body h2,.chapter-body h3{text-align:center;margin:1.8em 0 1em;color:#1a1a2e}
+.chapter-body strong{color:#1a1a2e}
+.pov-tag{text-align:center;color:#0f3460;font-size:.82rem;letter-spacing:.15em;margin:1.5em 0;font-weight:600}
+.reader-nav{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:24px 0;border-top:1px solid #e2d8d0;max-width:750px;margin:0 auto
+}
+.reader-nav a{
+  text-decoration:none;padding:8px 18px;border:1px solid #cbd5e0;
+  border-radius:6px;color:#2c2c2c;font-size:.85rem;transition:.2s
+}
+.reader-nav a:hover{background:#0f3460;color:#fff;border-color:#0f3460}
+
+/* Footer */
+.site-footer{text-align:center;padding:30px 0;color:#a0aec0;font-size:.78rem;border-top:1px solid #e2d8d0;margin-top:30px}
+
+@media(max-width:600px){
+  .hero h1{font-size:1.6rem}
+  .novel-grid{grid-template-columns:1fr}
+  .cover-large{padding:30px 20px}.cover-large h1{font-size:1.8rem}
+  .chapter-list a{flex-direction:column;gap:4px}
+}
